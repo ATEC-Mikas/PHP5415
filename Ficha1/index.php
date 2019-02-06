@@ -58,13 +58,34 @@ for($i=1;$i<=100;$i++) {
 <h1>Sexto exercicio</h1>
 <div>
 <?php
+$contador=0;
+$i=1;
+while($contador<100) {
+    $teste=true;
+    for($x=2;$x<$i;$x++) {
+        if($i%$x==0) {
+            $teste=false;
+            break;
+        }
+    }
+    if($teste) {
+        echo "$i - $contador<br>";
+        $contador++;
+    }
+    $i++;
+}
+?>
+</div>
+<h1>Sétimo exercicio</h1>
+<div>
+<?php
 $teste="amor a roma";
 if(strrev($teste)==$teste) {
     echo "É um palindromo.<br>";
 } else {echo "Não é um palindromo.<br>";}
 ?>
 </div>
-<h1>Sétimo exercicio</h1>
+<h1>Oitavo exercicio</h1>
 <div>
 <?php
 $teste=1221;
