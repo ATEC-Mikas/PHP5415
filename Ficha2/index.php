@@ -106,13 +106,13 @@ function devolverMes($num) {
 
 function imprimirArrayAssociativa($arr) {
     
-    foreach($arr as $var)
+    foreach($arr as $key => $var)
         if(is_array($var)) {
-            echo "<br>";    
+            echo "<br>$key :<br>";    
             imprimirArrayAssociativa($var);
         }
         else 
-            echo "$var ";
+            echo "$key : $var <br>";
     echo "<br>";
 }
     $help["init"](1);
@@ -203,7 +203,7 @@ function imprimirArrayAssociativa($arr) {
         "nome" => "Felizberto",
         "morada" => [ 
             "endereco" => "Rua das aboboras",
-            "codigop" => "6666-468",
+            "codigopostal" => "6666-468",
             "localidade" => "Puorto"
         ],
         "contactos" => [
