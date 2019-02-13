@@ -4,7 +4,7 @@ $help["init"]= function($num) {
     echo "<div>";
     echo "<h1>Exercicio $num</h1>";
 };
-$help["close"]= function() {echo "<div>";};
+$help["close"]= function() {echo "</div>";};
 $help["gerarvetor"]= function($tam) {
     $vet = [];
     for($i=0;$i<$tam;$i++) {
@@ -104,6 +104,15 @@ function devolverMes($num) {
     }
 }
 
+function imprimirArrayAssociativa($arr) {
+    echo "<br>";    
+    foreach($arr as $var)
+        if(is_array($var))
+            imprimirArrayAssociativa($var);
+        else 
+            echo "$var ";
+    echo "<br>";
+}
     $help["init"](1);
     $vet = $help["gerarvetor"](20);
     function maior($vetor) {
@@ -208,6 +217,9 @@ function devolverMes($num) {
             ]
         ]
     ];
+
+    imprimirArrayAssociativa($info);
+
     $help["close"]();
 
     
