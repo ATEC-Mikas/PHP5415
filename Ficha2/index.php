@@ -105,10 +105,12 @@ function devolverMes($num) {
 }
 
 function imprimirArrayAssociativa($arr) {
-    echo "<br>";    
+    
     foreach($arr as $var)
-        if(is_array($var))
+        if(is_array($var)) {
+            echo "<br>";    
             imprimirArrayAssociativa($var);
+        }
         else 
             echo "$var ";
     echo "<br>";
