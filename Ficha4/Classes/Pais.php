@@ -77,7 +77,7 @@
 
         function adicionarFronteira($pais) {
             if(strcmp(get_class($pais),"Pais")==0) {
-                $this->fronteira[count($this->fronteira)]=$pais;
+                $this->fronteira[count($this->fronteira)]=clone $pais;
                 return true;
             }
             return false;
@@ -85,8 +85,8 @@
 
         function removerFronteira($numero) {
             $length=count($this->fronteira);
-            if(is_int($numero) && $numero<$length-1) {
-                array_splice($fronteiras,$numero,1); //todo ver se funfa :)
+            if(is_int($numero) && $numero<$length) {
+                array_splice($this->$fronteiras,$numero,1); //todo ver se funfa :)
             }
         }
 
