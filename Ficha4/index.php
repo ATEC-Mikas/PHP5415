@@ -33,4 +33,16 @@
     $c1->removerMovimento(1);
     listarMovimentos($c1);
 
+
+
+    require __DIR__ . "/vendor/autoload.php";
+
+    use Atec\Conta;
+    use Atec\Pais;
+
+    $c= new Conta("teste",0);
+    $p= new Pais("test","capit");
+
+
+
 ?>

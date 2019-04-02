@@ -1,0 +1,8 @@
+{
+    "name": "t0114411/php",
+    "description": "Projeto teste",
+    "autoload": {
+      "psr-4": {"Atec\\": "src/"}  
+    },
+    "require": {}
+}
