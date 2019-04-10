@@ -89,7 +89,7 @@
         function removerFronteira($numero) {
             $length=count($this->fronteira);
             if(is_int($numero) && $numero<$length) {
-                array_splice($this->$fronteiras,$numero,1); //todo ver se funfa :)
+                array_splice($this->fronteira,$numero,1); //todo ver se funfa :)
             }
         }
 

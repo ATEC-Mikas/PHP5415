@@ -1,0 +1,8 @@
+{
+    "name": "t0114411/revisoes",
+    "description": "Ficha de revisoes",
+    "autoload": {
+        "psr-4": {"Revisoes\\": "src/"}
+    },
+    "require": {}
+}
