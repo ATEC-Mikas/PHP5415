@@ -1,0 +1,8 @@
+{
+    "name": "atec/ficha-r",
+    "description": "Ficha R",
+    "autoload": {
+        "psr-4": {"Ficha\\":"src/"}
+    },
+    "require": {}
+}
