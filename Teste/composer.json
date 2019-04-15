@@ -1,0 +1,8 @@
+{
+    "name": "atec/teste",
+    "description": "Teste",
+    "autoload": {
+        "psr-4": {"Microblog\\":"src/"}
+    },
+    "require": {}
+}
